@@ -7,6 +7,7 @@
       'u-button--primary': type === 'primary',
       'u-button--secondary': type === 'secondary',
       'u-button--outline': type === 'outline',
+      'u-button--fancy': type === 'fancy',
       'u-button--small': size === 'small',
       'u-button--medium': size === 'medium',
       'u-button--large': size === 'large'
@@ -99,6 +100,51 @@ withDefaults(
   background-color: transparent;
   color: var(--accent);
   border: 1px solid var(--accent);
+}
+
+.u-button--fancy {
+  border-radius: 40px;
+  background-color: transparent;
+  position: relative;
+  border: none;
+  z-index: 2;
+}
+
+.u-button--fancy:hover {
+  border: none;
+}
+.u-button--fancy::before {
+  content: '';
+  position: absolute;
+  inset: -0.2rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5),
+    var(--clr-4),
+    var(--clr-3)
+  );
+  padding: 1.5px;
+  border-radius: inherit;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.u-button--fancy:hover {
+  background-color: transparent;
+}
+.u-button--fancy .u-label-text {
+  background: linear-gradient(to right, #53feed, #ccffae);
+  background-clip: text;
+  color: transparent;
 }
 
 .u-button--small {
