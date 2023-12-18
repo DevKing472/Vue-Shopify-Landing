@@ -51,9 +51,6 @@ withDefaults(
   padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  width: fit-content;
-  margin: 0 auto;
 }
 
 .u-button:hover {
@@ -81,7 +78,7 @@ withDefaults(
 }
 
 .u-button--outline {
-  background-color: transparent;
+  background-color: var(--background);
   color: var(--text);
   border: 1px solid var(--primary);
 }

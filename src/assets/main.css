@@ -7,6 +7,11 @@
     --primary: #d5d5d8;
     --secondary: #000000;
     --accent: #14161a;
+    --clr-1: #052b2f;
+    --clr-2: #073438;
+    --clr-3: #0e4b50;
+    --clr-4: #2d8f85;
+    --clr-5: #637c54;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -16,6 +21,9 @@
     --primary: #27272a;
     --secondary: #ffffff;
     --accent: #e5e7eb;
+    --clr-3: #00000005;
+    --clr-4: #2d8f85;
+    --clr-5: #00000081;
   }
 }
 
