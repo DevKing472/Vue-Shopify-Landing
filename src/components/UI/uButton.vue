@@ -28,7 +28,7 @@
 <script setup lang="ts">
 withDefaults(
   defineProps<{
-    type?: 'primary' | 'secondary' | 'outline'
+    type?: 'primary' | 'secondary' | 'outline' | 'fancy'
     size?: 'small' | 'medium' | 'large'
     disabled?: boolean
     label?: string

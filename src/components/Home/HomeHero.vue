@@ -7,8 +7,11 @@
         <ShopifyIcon />
       </div>
       <div class="pitch-container">
-        <h1 class="text-size-h1">Build Amazing Apps Today</h1>
-        <h4>Kickstart your shopify app with Vue.JS with this template</h4>
+        <h1 class="text-size-h1">
+          Build <span class="shopify-text">Shopify</span> Apps with
+          <span class="vue-js-text">VueJS</span>
+        </h1>
+        <p>Combine the flexibility of VueJS with the power of Shopify</p>
         <a
           :href="url"
           style="margin: 0 auto"
@@ -95,6 +98,20 @@ const url = 'https://github.com/Mini-Sylar/shopify-app-vue-template'
 
 .text-size-h1 {
   margin-bottom: 0;
+}
+
+.shopify-text {
+  color: transparent;
+  background: linear-gradient(#7ab55c, #41b883);
+  background-clip: text;
+  filter: drop-shadow(0 0 0.5rem #41b883);
+}
+
+.vue-js-text {
+  color: transparent;
+  background: linear-gradient(#41b883, #35495e);
+  background-clip: text;
+  filter: drop-shadow(0 0 0.5rem #35495e);
 }
 .glow-button {
   position: relative;
