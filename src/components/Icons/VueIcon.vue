@@ -18,7 +18,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useMotionProperties, useSpring } from '@vueuse/motion'
+import { useMotionProperties, useSpring, type PermissiveMotionProperties } from '@vueuse/motion'
 import type { DragHandler } from '@/types/gesture.types'
 
 const icon = ref()
@@ -27,7 +27,7 @@ const { motionProperties } = useMotionProperties(icon, {
   x: 0,
   y: 0
 })
-const { set } = useSpring(motionProperties)
+const { set } = useSpring(motionProperties as PermissiveMotionProperties)
 
 const dragHandler: DragHandler = ({ movement: [x, y], dragging }) => {
   if (!dragging) {
