@@ -34,7 +34,7 @@
             }
           }"
         >
-          <UButton label="Clone Template" type="outline" style="position: relative; z-index: -1;">
+          <UButton label="Clone Template" type="outline" style="position: relative; z-index: -1">
             <template #icon>
               <PhGithubLogo />
             </template>
@@ -62,8 +62,9 @@ const url = 'https://github.com/Mini-Sylar/shopify-app-vue-template'
   inherits: false;
 }
 .hero-section {
-  position: relative;
-  height: 100vh;
+  position: absolute;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

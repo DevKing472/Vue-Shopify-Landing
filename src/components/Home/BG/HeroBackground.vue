@@ -1,13 +1,27 @@
 <template>
-  <div class="magicpattern" style="height: 100%"></div>
+  <div class="magicpattern">
+    <FromCenter></FromCenter>
+    <FromBottomRight></FromBottomRight>
+    <FromTopRight></FromTopRight>
+    <FromBottomLeft></FromBottomLeft>
+    <FromTopLeft></FromTopLeft>
+  </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import FromCenter from './FromCenter.vue'
+import FromBottomRight from './FromBottomRight.vue'
+import FromTopRight from './FromTopRight.vue'
+import FromBottomLeft from './FromBottomLeft.vue'
+import FromTopLeft from './FromTopLeft.vue'
+</script>
 
 <style scoped>
 .magicpattern {
   width: 100%;
   height: 100%;
+  position: absolute;
+  overflow: hidden;
   background-size: cover;
   background-position: center center;
   background-repeat: repeat;
