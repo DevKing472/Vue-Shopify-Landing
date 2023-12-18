@@ -13,6 +13,8 @@
     --clr-4: #2d8f85;
     --clr-5: #00000081;
     --bleed-in: #f4f4f6;
+    --card-icon-bg: #cfcfcf;
+    --card-icon-fill: #3a3a3a;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -26,6 +28,8 @@
     --clr-4: #2d8f85;
     --clr-5: #00000081;
     --bleed-in: #000000;
+    --card-icon-bg: #303030;
+    --card-icon-fill: #c5c5c5;
   }
 }
 
