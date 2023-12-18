@@ -54,5 +54,6 @@ const dragHandler: DragHandler = ({ movement: [x, y], dragging }) => {
 svg {
   width: 10rem;
   height: 100%;
+  filter: drop-shadow(0px 0px 50px #637c54);
 }
 </style>
