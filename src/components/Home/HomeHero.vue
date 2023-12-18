@@ -68,7 +68,7 @@ const url = 'https://github.com/Mini-Sylar/shopify-app-vue-template'
 }
 
 section {
-  height: 100vh;
+  height: min(100vh, 800px);
   width: 100%;
   position: relative;
 }
