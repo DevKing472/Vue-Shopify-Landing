@@ -11,7 +11,8 @@
     --clr-2: #073438;
     --clr-3: #0e4b50;
     --clr-4: #2d8f85;
-    --clr-5: #637c54;
+    --clr-5: #00000081;
+    --bleed-in: #f4f4f6;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -24,6 +25,7 @@
     --clr-3: #00000005;
     --clr-4: #2d8f85;
     --clr-5: #00000081;
+    --bleed-in: #000000;
   }
 }
 
