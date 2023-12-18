@@ -1,7 +1,7 @@
 <template>
-  <div class="feature-container">
+  <div class="feature-container" ref="cardContainer" v-move="moveHandler">
     <div class="grid-item" v-for="(card, index) in cardData" :key="index">
-      <UCard>
+      <UCard ref="cards">
         <template #icon>
           <component :is="card.icon" size="32" weight="thin"></component>
         </template>
@@ -17,22 +17,37 @@
 </template>
 
 <script setup lang="ts">
-import { PhSparkle, PhAlien } from '@phosphor-icons/vue'
+import { PhFileVue, PhBridge, PhWebhooksLogo } from '@phosphor-icons/vue'
+import { ref, type ComponentPublicInstance } from 'vue'
+
+const cardContainer = ref()
+const cards = ref()
+
+const moveHandler = ({ event, moving, ...state }) => {
+  cards.value.forEach((card: ComponentPublicInstance) => {
+    const cardRect = card.$el.getBoundingClientRect()
+    const cardX = event.clientX - cardRect.left
+    const cardY = event.clientY - cardRect.top
+    card.$el.style.setProperty('--mouse-x', `${cardX}px`)
+    card.$el.style.setProperty('--mouse-y', `${cardY}px`)
+  })
+}
+
 const cardData = [
   {
-    icon: PhAlien,
-    header: 'Vue 3',
-    body: 'Vue 3 is the latest version of Vue.js. It brings a lot of new features and performance improvements.'
+    icon: PhFileVue,
+    header: 'Vue JS 💚',
+    body: 'All the features from Vue JS you love, including Vue Router, Pinia, and more!'
   },
   {
-    icon: PhSparkle,
-    header: 'Vue Router',
-    body: 'Vue Router is the official router for Vue.js. It deeply integrates with Vue.js core to make building Single Page Applications with Vue.js a breeze.'
+    icon: PhBridge,
+    header: 'App Bridge',
+    body: 'Interact with Shopify Components from your Vue app using Shopify App Bridge.'
   },
   {
-    icon: PhAlien,
-    header: 'Pinia',
-    body: 'Pinia is a modern, typed and performant Store for Vue.'
+    icon: PhWebhooksLogo,
+    header: 'Custom Hooks',
+    body: 'Make authenticated requests to Shopify Admin API using vueAuthenticatedFetch.'
   }
 ]
 </script>

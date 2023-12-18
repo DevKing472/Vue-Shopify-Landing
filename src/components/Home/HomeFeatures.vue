@@ -3,7 +3,7 @@
     <div class="main-container">
       <div class="heading-container">
         <a href="#">
-          <UButton label="Many Features, Wow" :type="'fancy'" size="small">
+          <UButton label="Ready to go!" :type="'fancy'" size="small">
             <template #icon>
               <PhSparkle color="#53feed" />
             </template>
