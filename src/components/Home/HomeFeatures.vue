@@ -1,13 +1,9 @@
 <template>
-    <div>
-        HomeFeatures
-    </div>
+  <section>
+    <div class="main-container">HomeFeatures</div>
+  </section>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

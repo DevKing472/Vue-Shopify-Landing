@@ -1,51 +1,53 @@
 <template>
-  <section class="hero-section">
-    <div class="main-container">
-      <div class="icon-section">
-        <VueIcon />
-        <span class="icon-divider"><h1>+</h1></span>
-        <ShopifyIcon />
+  <section>
+    <div class="hero-section">
+      <div class="main-container">
+        <div class="icon-section">
+          <VueIcon />
+          <span class="icon-divider"><h1>+</h1></span>
+          <ShopifyIcon />
+        </div>
+        <div class="pitch-container">
+          <h1 class="text-size-h1">
+            Build <span class="shopify-text">Shopify</span> Apps with
+            <span class="vue-js-text">VueJS</span>
+          </h1>
+          <p>Combine the flexibility of VueJS with the power of Shopify</p>
+          <a
+            :href="url"
+            style="margin: 0 auto"
+            target="_blank"
+            class="glow-button"
+            v-motion
+            :enter="{
+              scale: 1,
+              transition: {
+                type: 'spring',
+                stiffness: 100,
+                damping: 8,
+                bounce: 0.5
+              }
+            }"
+            :hovered="{
+              scale: 1.05,
+              transition: {
+                type: 'spring',
+                stiffness: 100,
+                damping: 10,
+                bounce: 0.5
+              }
+            }"
+          >
+            <UButton label="Clone Template" type="outline" style="position: relative; z-index: -1">
+              <template #icon>
+                <PhGithubLogo />
+              </template>
+            </UButton>
+          </a>
+        </div>
       </div>
-      <div class="pitch-container">
-        <h1 class="text-size-h1">
-          Build <span class="shopify-text">Shopify</span> Apps with
-          <span class="vue-js-text">VueJS</span>
-        </h1>
-        <p>Combine the flexibility of VueJS with the power of Shopify</p>
-        <a
-          :href="url"
-          style="margin: 0 auto"
-          target="_blank"
-          class="glow-button"
-          v-motion
-          :enter="{
-            scale: 1,
-            transition: {
-              type: 'spring',
-              stiffness: 100,
-              damping: 8,
-              bounce: 0.5
-            }
-          }"
-          :hovered="{
-            scale: 1.05,
-            transition: {
-              type: 'spring',
-              stiffness: 100,
-              damping: 10,
-              bounce: 0.5
-            }
-          }"
-        >
-          <UButton label="Clone Template" type="outline" style="position: relative; z-index: -1">
-            <template #icon>
-              <PhGithubLogo />
-            </template>
-          </UButton>
-        </a>
-      </div>
+      <HeroBackground class="section-bg" />
     </div>
-    <HeroBackground class="section-bg" />
   </section>
 </template>
 
@@ -63,6 +65,12 @@ const url = 'https://github.com/Mini-Sylar/shopify-app-vue-template'
   syntax: '<angle>';
   initial-value: 0deg;
   inherits: false;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
 .hero-section {
   position: absolute;
