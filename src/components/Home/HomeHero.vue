@@ -9,11 +9,37 @@
       <div class="pitch-container">
         <h1 class="text-size-h1">Build Amazing Apps Today</h1>
         <h4>Kickstart your shopify app with Vue.JS with this template</h4>
-        <UButton label="Get Started" type="outline">
-          <template #icon>
-            <PhGithubLogo />
-          </template>
-        </UButton>
+        <a
+          :href="url"
+          style="margin: 0 auto"
+          target="_blank"
+          class="glow-button"
+          v-motion
+          :enter="{
+            scale: 1,
+            transition: {
+              type: 'spring',
+              stiffness: 100,
+              damping: 8,
+              bounce: 0.5
+            }
+          }"
+          :hovered="{
+            scale: 1.05,
+            transition: {
+              type: 'spring',
+              stiffness: 100,
+              damping: 10,
+              bounce: 0.5
+            }
+          }"
+        >
+          <UButton label="Clone Template" type="outline" style="position: relative; z-index: -1;">
+            <template #icon>
+              <PhGithubLogo />
+            </template>
+          </UButton>
+        </a>
       </div>
     </div>
     <HeroBackground class="section-bg" />
@@ -25,9 +51,16 @@ import HeroBackground from '@/components/Home/BG/HeroBackground.vue'
 import ShopifyIcon from '../Icons/ShopifyIcon.vue'
 import VueIcon from '../Icons/VueIcon.vue'
 import { PhGithubLogo } from '@phosphor-icons/vue'
+
+const url = 'https://github.com/Mini-Sylar/shopify-app-vue-template'
 </script>
 
 <style scoped>
+@property --gradient-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
 .hero-section {
   position: relative;
   height: 100vh;
@@ -59,7 +92,43 @@ import { PhGithubLogo } from '@phosphor-icons/vue'
   text-align: center;
 }
 
-.text-size-h1{
+.text-size-h1 {
   margin-bottom: 0;
+}
+.glow-button {
+  position: relative;
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+
+.glow-button::before,
+.glow-button::after {
+  content: '';
+  position: absolute;
+  inset: -0.2rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5),
+    var(--clr-4),
+    var(--clr-3)
+  );
+  border-radius: inherit;
+  animation: rotation 4s linear infinite;
+}
+
+.glow-button::after {
+  filter: blur(3.5rem);
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
 }
 </style>

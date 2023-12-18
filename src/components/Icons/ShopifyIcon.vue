@@ -1,5 +1,7 @@
 <template>
   <svg
+    v-drag="dragHandler"
+    ref="icon"
     width="2192"
     height="2500"
     viewBox="0 0 256 292"
@@ -20,6 +22,33 @@
     />
   </svg>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+import { useMotionProperties, useSpring } from '@vueuse/motion'
+import type { DragHandler } from '@/types/gesture.types'
+
+const icon = ref()
+const { motionProperties } = useMotionProperties(icon, {
+  cursor: 'grab',
+  x: 0,
+  y: 0
+})
+const { set } = useSpring(motionProperties)
+
+const dragHandler: DragHandler = ({ movement: [x, y], dragging }) => {
+  if (!dragging) {
+    set({ x: 0, y: 0, cursor: 'grab' })
+    return
+  }
+
+  set({
+    cursor: 'grabbing',
+    x,
+    y
+  })
+}
+</script>
 
 <style scoped>
 svg {
