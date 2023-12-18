@@ -96,8 +96,9 @@ const url = 'https://github.com/Mini-Sylar/shopify-app-vue-template'
   text-align: center;
 }
 
-.text-size-h1 {
-  margin-bottom: 0;
+.text-size-h1,
+p {
+  margin-bottom: 1rem;
 }
 
 .shopify-text {
