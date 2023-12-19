@@ -24,22 +24,28 @@
               />
               <img src="@/assets/images/sample_dark.jpg" class="preview-app" />
             </picture>
-            <p style="text-align: center;">mNotify BMS SMS Notification is an approved shopify app which passed all checks</p>
+            <p style="text-align: center">
+              mNotify BMS SMS Notification is an approved shopify app which passed all checks
+            </p>
           </template>
         </UCard>
       </div>
     </div>
+    <BlobGradient />
   </section>
 </template>
 
 <script setup lang="ts">
 import { PhSquaresFour, PhChatCenteredDots } from '@phosphor-icons/vue'
+import BlobGradient from '@/components/Home/BG/BlobGradient.vue'
 </script>
 
 <style scoped>
 section {
   padding: 6rem 0;
   background: linear-gradient(to bottom, var(--bleed-in), var(--background));
+  position: relative;
+  z-index: 1;
 }
 .header-container {
   display: flex;
