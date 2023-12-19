@@ -68,4 +68,10 @@ const cardData = [
 ]
 </script>
 
-<style scoped></style>
+<style scoped>
+.feature-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+</style>

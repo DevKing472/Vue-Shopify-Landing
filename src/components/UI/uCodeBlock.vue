@@ -1,9 +1,9 @@
 <template>
-  <code>
+  <code class="code-parent">
     <div class="code-body">
-      <span v-for="(word, index) in code.split(' ')" :key="index">
+      <span v-for="(word, index) in code.split(' ')" :key="index" class="code-space">
         <span v-if="keyWords.includes(word)" class="keyword">{{ word }}</span>
-        <span v-else>{{ word }}</span>
+        <span v-else class="non-keyword" :class="word.slice(0, 4)">{{ word }}</span>
         <span v-if="index !== code.split(' ').length - 1"> </span>
       </span>
     </div>
@@ -38,7 +38,7 @@ const keyWords = ['npm', 'git']
 </script>
 
 <style scoped>
-code {
+.code-parent {
   display: flex;
   align-items: center;
   background-color: var(--primary);
@@ -84,5 +84,22 @@ code {
   background-color: var(--primary);
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .code-parent {
+    width: min(95%, 1600px);
+    display: flex;
+    justify-content: center;
+  }
+  .code-space:has(.http) {
+    width: 200px;
+    text-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .copy-icon {
+    margin: 0;
+  }
 }
 </style>

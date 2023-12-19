@@ -7,8 +7,10 @@
             <template #icon><PhSquaresFour color="var(--accent-2)" /></template>
           </UButton>
         </a>
-        <h3 style="margin-top: 1rem; margin-bottom: 0">Apps Built Using This Template</h3>
-        <p>Here are some public apps built using this template</p>
+        <h3 style="margin-top: 1rem; margin-bottom: 0; text-align: center">
+          Apps Built Using This Template
+        </h3>
+        <p style="text-align: center">Here are some public apps built using this template</p>
       </div>
       <div class="sample-apps">
         <UCard id="sample-app">

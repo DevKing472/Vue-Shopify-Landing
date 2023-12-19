@@ -10,7 +10,7 @@
           </UButton>
         </a>
         <h3 style="margin-top: 1rem; margin-bottom: 0">Get Started In 3 Easy Steps</h3>
-        <p>Yes, It's that easy</p>
+        <p style="margin-bottom: 2rem">Yes, It's that easy</p>
       </div>
       <div class="steps-container" id="steps">
         <div class="left-side">
@@ -45,8 +45,8 @@
         class="what-next"
         style="display: flex; justify-content: center; flex-direction: column; align-items: center"
       >
-        <h3 style="margin-bottom: 0">What Next?</h3>
-        <p>
+        <h3 style="margin-bottom: 0; text-align: center;">What Next?</h3>
+        <p style="text-align: center;">
           Now that your app is ready, see the <span>Read Me</span> or refer to the official
           <span>Shopify Documentation</span> to start building
         </p>
@@ -132,6 +132,7 @@ h5,
   margin-block: 0;
 }
 
+h5,
 .description-text {
   margin-block: 1rem;
 }
@@ -160,6 +161,37 @@ h5,
 @media (prefers-color-scheme: light) {
   .congratulations {
     background-image: url('../../assets/images/congratulations_light.png');
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading-container {
+    text-align: center;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left-side {
+    width: 100%;
+  }
+  .right-side {
+    width: 100%;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .description {
+    width: 100%;
   }
 }
 </style>

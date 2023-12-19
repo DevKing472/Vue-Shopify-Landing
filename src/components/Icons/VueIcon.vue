@@ -62,4 +62,10 @@ svg {
   height: 100%;
   filter: drop-shadow(0px 0px 50px #2d8f85);
 }
+
+@media screen and (max-width: 768px) {
+  svg {
+    width: 5rem;
+  }
+}
 </style>

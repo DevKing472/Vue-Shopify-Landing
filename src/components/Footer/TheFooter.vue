@@ -4,7 +4,7 @@
       <div class="heading-container">
         <div class="left-side">
           <h3 style="margin-bottom: 1rem">Stay Informed</h3>
-          <p style="max-width: 70%">
+          <p class="issues">
             Have any issues or concerns? Open an issue. Interested in what I do with my free time?
             Check out my github
           </p>
@@ -55,7 +55,7 @@ const currentYear = new Date().getFullYear()
 </script>
 
 <style scoped>
-section {
+footer {
   background: linear-gradient(to bottom, var(--background), var(--clr-4));
   padding-bottom: 3rem;
 }
@@ -64,7 +64,8 @@ a {
   color: var(--accent-2);
 }
 .heading-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   min-height: 15rem;
   align-items: center;
   margin-bottom: 4rem;
@@ -92,7 +93,30 @@ a {
   justify-content: center;
 }
 
-.right-side-socials {
-  align-items: flex-end;
+.issues {
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .button-container {
+    justify-content: center;
+  }
+
+  .left-side {
+    text-align: center;
+  }
+
+  .issues {
+    width: 100%;
+  }
+
+  .socials-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right-side-socials {
+    align-items: center;
+  }
 }
 </style>

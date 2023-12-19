@@ -1,14 +1,16 @@
 <template>
   <nav>
-    <div class="left-side">
-      <ToggleTheme />
-    </div>
-    <div class="right-side">
-      <a href="https://github.com/Mini-Sylar/shopify-app-vue-template" target="_blank">
-        <UButton type="outline" label="Star This Repo" size="small">
-          <template #icon><PhStar color="yellow" /></template>
-        </UButton>
-      </a>
+    <div class="nav-container">
+      <div class="left-side">
+        <a href="https://github.com/Mini-Sylar/shopify-app-vue-template" target="_blank">
+          <UButton type="outline" label="Star This Repo" size="small">
+            <template #icon><PhStar color="var(--accent-2)" size="24" /></template>
+          </UButton>
+        </a>
+      </div>
+      <div class="right-side">
+        <ToggleTheme />
+      </div>
     </div>
   </nav>
 </template>
@@ -20,11 +22,18 @@ import ToggleTheme from './ToggleTheme.vue'
 
 <style scoped>
 nav {
-  position: absolute;
+  width: 100%;
+  background-color: red;
+  height: 0;
+}
+.nav-container {
+  position: relative;
   width: min(90%, 1600px);
   margin: 0 auto;
+  inset: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  justify-self: center;
   padding: 1rem;
   z-index: 3;
 }

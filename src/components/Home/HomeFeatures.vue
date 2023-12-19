@@ -9,7 +9,9 @@
             </template>
           </UButton>
         </a>
-        <h3 style="margin-top: 1rem; margin-bottom: 0">What's in This Template?</h3>
+        <h3 style="margin-top: 1rem; margin-bottom: 0; text-align: center">
+          What's in This Template?
+        </h3>
         <p>All you need to build a shopify app</p>
       </div>
       <FeatureList id="features" />
@@ -34,9 +36,5 @@ section {
   justify-content: center;
   margin-bottom: 2rem;
 }
-.feature-container {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-}
+
 </style>
