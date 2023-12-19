@@ -23,7 +23,6 @@ import ToggleTheme from './ToggleTheme.vue'
 <style scoped>
 nav {
   width: 100%;
-  background-color: red;
   height: 0;
 }
 .nav-container {
@@ -36,5 +35,15 @@ nav {
   justify-self: center;
   padding: 1rem;
   z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+  .right-side:deep(.u-label-text) {
+    display: none;
+  }
+
+  .right-side:deep(.u-icon-slot) {
+    margin: 0;
+  }
 }
 </style>
