@@ -2,7 +2,7 @@
   <section>
     <div class="main-container">
       <div class="heading-container">
-        <a href="#">
+        <a href="#features">
           <UButton label="Ready to go!" :type="'fancy'" size="small">
             <template #icon>
               <PhSparkle color="var(--accent-2)" />
@@ -12,7 +12,7 @@
         <h3 style="margin-top: 1rem; margin-bottom: 0">What's in This Template?</h3>
         <p>All you need to build a shopify app</p>
       </div>
-      <FeatureList />
+      <FeatureList id="features" />
     </div>
   </section>
 </template>

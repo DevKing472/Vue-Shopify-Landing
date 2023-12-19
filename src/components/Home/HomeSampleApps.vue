@@ -2,14 +2,16 @@
   <section>
     <div class="main-container">
       <div class="header-container">
-        <UButton type="fancy" label="Sample Apps" size="small">
-          <template #icon><PhSquaresFour color="var(--accent-2)" /></template>
-        </UButton>
+        <a href="#sample-app">
+          <UButton type="fancy" label="Sample Apps" size="small">
+            <template #icon><PhSquaresFour color="var(--accent-2)" /></template>
+          </UButton>
+        </a>
         <h3 style="margin-top: 1rem; margin-bottom: 0">Apps Built Using This Template</h3>
         <p>Here are some public apps built using this template</p>
       </div>
       <div class="sample-apps">
-        <UCard>
+        <UCard id="sample-app">
           <template #icon>
             <PhChatCenteredDots />
           </template>

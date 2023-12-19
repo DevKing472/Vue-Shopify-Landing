@@ -1,4 +1,5 @@
 <template>
+  <TheNav></TheNav>
   <main>
     <RouterView v-slot="{ Component }">
       <transition name="fade" mode="out-in">
@@ -6,9 +7,13 @@
       </transition>
     </RouterView>
   </main>
+  <TheFooter></TheFooter>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TheNav from '@/components/Nav/TheNav.vue'
+import TheFooter from './components/Footer/TheFooter.vue'
+</script>
 
 <style>
 .fade-enter-active,

@@ -2,9 +2,9 @@
   <nav>
     <div class="right-side">
       <a href="https://github.com/Mini-Sylar/shopify-app-vue-template" target="_blank">
-          <UButton type="outline" label="Star This Repo" size="small">
-            <template #icon><PhStar color="yellow" /></template>
-          </UButton>
+        <UButton type="outline" label="Star This Repo" size="small">
+          <template #icon><PhStar color="yellow" /></template>
+        </UButton>
       </a>
     </div>
   </nav>

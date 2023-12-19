@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <footer>
     <div class="main-container">
       <div class="heading-container">
         <div class="left-side">
@@ -8,14 +8,21 @@
             Have any issues or concerns? Open an issue. Interested in what I do with my free time?
             Check out my github
           </p>
-          <UButton type="outline" label="Open An Issue" size="small">
-            <template #icon><PhGithubLogo color="var(--accent-2)" /></template>
-          </UButton>
+          <a
+            href="https://github.com/Mini-Sylar/shopify-app-vue-template/issues/new/choose"
+            target="_blank"
+          >
+            <UButton type="outline" label="Open An Issue" size="small">
+              <template #icon><PhGithubLogo color="var(--accent-2)" /></template>
+            </UButton>
+          </a>
         </div>
         <div class="button-container">
-          <UButton type="fancy" label="Follow me on github" size="large">
-            <template #icon><PhPersonArmsSpread color="var(--accent-2)" /></template>
-          </UButton>
+          <a href="https://github.com/Mini-Sylar" target="_blank">
+            <UButton type="fancy" label="Follow me on github" size="large">
+              <template #icon><PhPersonArmsSpread color="var(--accent-2)" /></template>
+            </UButton>
+          </a>
         </div>
       </div>
       <div class="socials-container">
@@ -39,7 +46,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </footer>
 </template>
 
 <script setup lang="ts">

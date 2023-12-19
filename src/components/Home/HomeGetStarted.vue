@@ -2,7 +2,7 @@
   <section>
     <div class="main-container">
       <div class="heading-container">
-        <a href="#">
+        <a href="#steps">
           <UButton label="Scaffold your app!" :type="'fancy'" size="small">
             <template #icon>
               <PhSparkle color="var(--accent-2)" />
@@ -12,7 +12,7 @@
         <h3 style="margin-top: 1rem; margin-bottom: 0">Get Started In 3 Easy Steps</h3>
         <p>Yes, It's that easy</p>
       </div>
-      <div class="steps-container">
+      <div class="steps-container" id="steps">
         <div class="left-side">
           <ul class="steps">
             <li class="step" v-for="(step, index) in steps" :key="index">
@@ -45,7 +45,7 @@
         class="what-next"
         style="display: flex; justify-content: center; flex-direction: column; align-items: center"
       >
-        <h3 style="margin-bottom: 0;">What Next?</h3>
+        <h3 style="margin-bottom: 0">What Next?</h3>
         <p>
           Now that your app is ready, see the <span>Read Me</span> or refer to the official
           <span>Shopify Documentation</span> to start building

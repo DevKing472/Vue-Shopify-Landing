@@ -56,6 +56,10 @@ body {
   line-height: 1.65;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
