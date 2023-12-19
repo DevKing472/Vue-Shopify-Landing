@@ -17,7 +17,13 @@
 </template>
 
 <script setup lang="ts">
-import { PhFileVue, PhBridge, PhWebhooksLogo } from '@phosphor-icons/vue'
+import {
+  PhFileVue,
+  PhBridge,
+  PhWebhooksLogo,
+  PhDatabase,
+  PhCloudArrowUp
+} from '@phosphor-icons/vue'
 import { ref, type ComponentPublicInstance } from 'vue'
 
 const cardContainer = ref()
@@ -48,6 +54,16 @@ const cardData = [
     icon: PhWebhooksLogo,
     header: 'Custom Hooks',
     body: 'Make authenticated requests to Shopify Admin API using vueAuthenticatedFetch.'
+  },
+  {
+    icon: PhDatabase,
+    header: 'Database',
+    body: 'Various available database options including MySQL, Postgres, and more!'
+  },
+  {
+    icon: PhCloudArrowUp,
+    header: 'Docker',
+    body: 'Docker ready! deploy your app on any platform with ease'
   }
 ]
 </script>
