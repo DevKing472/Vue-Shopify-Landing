@@ -49,6 +49,7 @@ const keyWords = ['npm', 'git']
   color: var(--text);
   width: 100%;
   gap: 1rem;
+  overflow: hidden;
 }
 
 .keyword {
@@ -100,6 +101,10 @@ const keyWords = ['npm', 'git']
 
   .copy-icon {
     margin: 0;
+  }
+
+  .copied-el {
+    right: 0;
   }
 }
 
