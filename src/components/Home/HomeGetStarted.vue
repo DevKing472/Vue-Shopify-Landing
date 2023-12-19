@@ -41,6 +41,16 @@
           </UCard>
         </div>
       </div>
+      <div
+        class="what-next"
+        style="display: flex; justify-content: center; flex-direction: column; align-items: center"
+      >
+        <h3 style="margin-bottom: 0;">What Next?</h3>
+        <p>
+          Now that your app is ready, see the <span>Read Me</span> or refer to the official
+          <span>Shopify Documentation</span> to start building
+        </p>
+      </div>
     </div>
   </section>
 </template>
@@ -71,7 +81,7 @@ const steps = [
     icon: PhNumberCircleThree,
     title: 'Start The Server',
     description: `On first run, you'll have to configure your app using the snippet below`,
-    command: 'npm run dev -- --reset'
+    command: 'npm run dev'
   }
 ]
 </script>
