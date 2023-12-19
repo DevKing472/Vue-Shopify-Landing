@@ -31,6 +31,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+// @ts-ignore
 import { useMotionProperties, useSpring, type PermissiveMotionProperties } from '@vueuse/motion'
 import type { DragHandler } from '@/types/gesture.types'
 
