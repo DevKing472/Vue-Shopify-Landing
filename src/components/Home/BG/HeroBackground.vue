@@ -43,10 +43,4 @@ const image = computed(() => {
     background-image: url('../../../assets/images/grid_light.svg');
   }
 }
-
-@media screen and (max-width: 400px) {
-  .magicpattern {
-    overflow: hidden;
-  }
-}
 </style>

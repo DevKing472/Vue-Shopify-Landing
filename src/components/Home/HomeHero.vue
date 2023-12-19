@@ -71,6 +71,7 @@ section {
   height: min(100vh, 800px);
   width: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 .hero-section {
   position: absolute;
