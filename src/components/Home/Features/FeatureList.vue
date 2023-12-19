@@ -1,6 +1,12 @@
 <template>
   <div class="feature-container" ref="cardContainer" v-move="moveHandler">
-    <div class="grid-item" v-for="(card, index) in cardData" :key="index">
+    <div
+      class="grid-item"
+      v-for="(card, index) in cardData"
+      :key="index"
+      v-motion
+      v-motion-fade-visible
+    >
       <UCard ref="cards" class="card">
         <template #icon>
           <component :is="card.icon" size="32" weight="thin"></component>

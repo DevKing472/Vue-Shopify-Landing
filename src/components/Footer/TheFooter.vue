@@ -19,7 +19,13 @@
         </div>
         <div class="button-container">
           <a href="https://github.com/Mini-Sylar" target="_blank">
-            <UButton type="fancy" label="Follow me on github" size="large">
+            <UButton
+              type="fancy"
+              label="Follow me on github"
+              v-motion
+              v-motion-pop-visible-once
+              size="large"
+            >
               <template #icon><PhPersonArmsSpread color="var(--accent-2)" /></template>
             </UButton>
           </a>

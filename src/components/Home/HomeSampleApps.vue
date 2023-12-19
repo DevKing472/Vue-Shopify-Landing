@@ -21,7 +21,7 @@
             <h4>mNotify BMS SMS Notification</h4>
           </template>
           <template #default>
-            <img :src="image" class="preview-app" />
+            <img :src="image" class="preview-app" v-motion v-motion-fade-visible />
             <p style="text-align: center">
               mNotify BMS SMS Notification is an approved shopify app which passed all checks
             </p>

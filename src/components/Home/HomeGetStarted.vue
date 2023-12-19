@@ -36,7 +36,7 @@
               </div>
             </template>
             <h4 style="text-align: center">Congratulations <span v-motion-pop-visible>🎊</span></h4>
-            <div class="congratulations"></div>
+            <div class="congratulations" v-motion v-motion-fade-visible></div>
             <p style="text-align: center">Your app is ready to go!</p>
           </UCard>
         </div>
@@ -45,8 +45,8 @@
         class="what-next"
         style="display: flex; justify-content: center; flex-direction: column; align-items: center"
       >
-        <h3 style="margin-bottom: 0; text-align: center;">What Next?</h3>
-        <p style="text-align: center;">
+        <h3 style="margin-bottom: 0; text-align: center">What Next?</h3>
+        <p style="text-align: center">
           Now that your app is ready, see the <span>Read Me</span> or refer to the official
           <span>Shopify Documentation</span> to start building
         </p>
