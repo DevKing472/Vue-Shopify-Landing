@@ -14,6 +14,15 @@ import FromBottomRight from './FromBottomRight.vue'
 import FromTopRight from './FromTopRight.vue'
 import FromBottomLeft from './FromBottomLeft.vue'
 import FromTopLeft from './FromTopLeft.vue'
+import { useDark } from '@vueuse/core'
+import { computed } from 'vue'
+import GridDark from '../../../assets/images/grid_dark.svg'
+import GridLight from '../../../assets/images/grid_light.svg'
+
+const isDark = useDark()
+const image = computed(() => {
+  return isDark.value ? `url(${GridDark})` : `url(${GridLight})`
+})
 </script>
 
 <style scoped>
@@ -26,16 +35,11 @@ import FromTopLeft from './FromTopLeft.vue'
     background-size: cover;
     background-position: center center;
     background-repeat: repeat;
-    background-image: url('../../../assets/images/grid_dark.svg');
+    background-image: v-bind('image');
   }
 }
 @media (prefers-color-scheme: light) {
   .magicpattern {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: repeat;
     background-image: url('../../../assets/images/grid_light.svg');
   }
 }

@@ -1,5 +1,8 @@
 <template>
   <nav>
+    <div class="left-side">
+      <ToggleTheme />
+    </div>
     <div class="right-side">
       <a href="https://github.com/Mini-Sylar/shopify-app-vue-template" target="_blank">
         <UButton type="outline" label="Star This Repo" size="small">
@@ -12,6 +15,7 @@
 
 <script setup lang="ts">
 import { PhStar } from '@phosphor-icons/vue'
+import ToggleTheme from './ToggleTheme.vue'
 </script>
 
 <style scoped>

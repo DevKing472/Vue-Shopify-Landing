@@ -63,6 +63,16 @@ import {
   PhConfetti,
   PhSparkle
 } from '@phosphor-icons/vue'
+import { useDark } from '@vueuse/core'
+import { computed } from 'vue'
+import congratulationDark from '../../assets/images/congratulations_dark.png'
+import congratulationLight from '../../assets/images/congratulations_light.png'
+
+const isDark = useDark()
+
+const image = computed(() => {
+  return isDark.value ? `url(${congratulationDark})` : `url(${congratulationLight})`
+})
 
 const steps = [
   {
@@ -133,7 +143,7 @@ h5,
 .congratulations {
   width: 100%;
   height: 15rem;
-  background-image: url('../../assets/images/congratulations_dark.png');
+  background-image: v-bind('image');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

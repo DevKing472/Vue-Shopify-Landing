@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@phosphor-icons/vue": "^2.1.6",
+    "@vueuse/core": "^10.7.0",
     "@vueuse/gesture": "2.0.0-beta.1",
     "@vueuse/motion": "^2.0.0",
     "vue": "^3.3.11",

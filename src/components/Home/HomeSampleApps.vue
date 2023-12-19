@@ -19,13 +19,7 @@
             <h4>mNotify BMS SMS Notification</h4>
           </template>
           <template #default>
-            <picture>
-              <source
-                srcset="../../assets/images/sample_light.jpg"
-                media="(prefers-color-scheme: light)"
-              />
-              <img src="@/assets/images/sample_dark.jpg" class="preview-app" />
-            </picture>
+            <img :src="image" class="preview-app" />
             <p style="text-align: center">
               mNotify BMS SMS Notification is an approved shopify app which passed all checks
             </p>
@@ -40,6 +34,15 @@
 <script setup lang="ts">
 import { PhSquaresFour, PhChatCenteredDots } from '@phosphor-icons/vue'
 import BlobGradient from '@/components/Home/BG/BlobGradient.vue'
+import { useDark } from '@vueuse/core'
+import { computed } from 'vue'
+import SampleDark from '@/assets/images/sample_dark.jpg?url'
+import SampleLight from '@/assets/images/sample_light.jpg?url'
+
+const isDark = useDark()
+const image = computed(() => {
+  return isDark.value ? SampleDark : SampleLight
+})
 </script>
 
 <style scoped>
