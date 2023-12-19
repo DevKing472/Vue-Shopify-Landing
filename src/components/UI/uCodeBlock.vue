@@ -102,4 +102,10 @@ const keyWords = ['npm', 'git']
     margin: 0;
   }
 }
+
+@media screen and (max-width: 321px) {
+  .code-space:has(.http) {
+    width: 120px;
+  }
+}
 </style>

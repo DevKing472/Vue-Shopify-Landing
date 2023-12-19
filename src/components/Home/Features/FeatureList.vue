@@ -1,7 +1,7 @@
 <template>
   <div class="feature-container" ref="cardContainer" v-move="moveHandler">
     <div class="grid-item" v-for="(card, index) in cardData" :key="index">
-      <UCard ref="cards">
+      <UCard ref="cards" class="card">
         <template #icon>
           <component :is="card.icon" size="32" weight="thin"></component>
         </template>
@@ -73,5 +73,6 @@ const cardData = [
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  place-content: center;
 }
 </style>
