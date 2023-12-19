@@ -7,6 +7,8 @@
     --primary: #d5d5d8;
     --secondary: #000000;
     --accent: #14161a;
+    --accent-2: hsl(174, 99%, 36%);
+    --accent-3: hsl(98, 100%, 24%);
     --clr-1: #052b2f;
     --clr-2: #073438;
     --clr-3: #0e4b50;
@@ -24,6 +26,8 @@
     --primary: #27272a;
     --secondary: #ffffff;
     --accent: #e5e7eb;
+    --accent-2: #53feed;
+    --accent-3: #ccffae;
     --clr-3: #00000005;
     --clr-4: #2d8f85;
     --clr-5: #00000081;

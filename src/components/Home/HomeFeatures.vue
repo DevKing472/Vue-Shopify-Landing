@@ -5,7 +5,7 @@
         <a href="#">
           <UButton label="Ready to go!" :type="'fancy'" size="small">
             <template #icon>
-              <PhSparkle color="#53feed" />
+              <PhSparkle color="var(--accent-2)" />
             </template>
           </UButton>
         </a>

@@ -142,7 +142,7 @@ withDefaults(
   background-color: transparent;
 }
 .u-button--fancy .u-label-text {
-  background: linear-gradient(to right, #53feed, #ccffae);
+  background: linear-gradient(to right, var(--accent-2), var(--accent-3));
   background-clip: text;
   color: transparent;
 }
