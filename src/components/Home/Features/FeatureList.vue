@@ -29,7 +29,7 @@ import { ref, type ComponentPublicInstance } from 'vue'
 const cardContainer = ref()
 const cards = ref()
 
-const moveHandler = ({ event, moving, ...state }) => {
+const moveHandler = ({ event }: { event: MouseEvent }) => {
   cards.value.forEach((card: ComponentPublicInstance) => {
     const cardRect = card.$el.getBoundingClientRect()
     const cardX = event.clientX - cardRect.left
