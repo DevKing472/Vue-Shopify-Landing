@@ -62,7 +62,7 @@ const currentYear = new Date().getFullYear()
 
 <style scoped>
 footer {
-  background: linear-gradient(to bottom, var(--background), var(--clr-4));
+  background: linear-gradient(to bottom, var(--background), var(--footer-fill));
   padding-bottom: 3rem;
 }
 
