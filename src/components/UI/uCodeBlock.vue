@@ -93,11 +93,9 @@ const keyWords = ['npm', 'git']
     display: flex;
     justify-content: center;
   }
-  .code-space {
-    text-wrap: nowrap;
-  }
   .http {
     display: flex;
+    white-space: pre;
     width: 200px;
     overflow-x: scroll;
   }
