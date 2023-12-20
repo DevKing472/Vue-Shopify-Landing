@@ -19,7 +19,7 @@
       </div>
       <div class="button-container">
         <a
-          href="https://github.com/Mini-Sylar/shopify-app-vue-template?tab=readme-ov-file#shopify-app-template-using-vue"
+          href="https://github.com/Mini-Sylar/shopify-app-vue-template?tab=readme-ov-file#getting-started"
           target="_blank"
         >
           <uButton label="Read Me" type="outline"> </uButton>
