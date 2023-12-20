@@ -99,6 +99,10 @@ a {
   justify-content: center;
 }
 
+.right-side-socials {
+  align-items: flex-end;
+}
+
 .issues {
   width: 70%;
 }

@@ -3,6 +3,7 @@
     <HomeHero></HomeHero>
     <HomeFeatures></HomeFeatures>
     <HomeGetStarted></HomeGetStarted>
+    <HomeWhatNext></HomeWhatNext>
     <HomeSampleApps></HomeSampleApps>
   </div>
 </template>
@@ -12,6 +13,7 @@ import HomeHero from '@/components/Home/HomeHero.vue'
 import HomeFeatures from '@/components/Home/HomeFeatures.vue'
 import HomeGetStarted from '@/components/Home/HomeGetStarted.vue'
 import HomeSampleApps from '@/components/Home/HomeSampleApps.vue'
+import HomeWhatNext from '@/components/Home/HomeWhatNext.vue'
 </script>
 
 <style scoped></style>

@@ -41,16 +41,6 @@
           </UCard>
         </div>
       </div>
-      <div
-        class="what-next"
-        style="display: flex; justify-content: center; flex-direction: column; align-items: center"
-      >
-        <h3 style="margin-bottom: 0; text-align: center">What Next?</h3>
-        <p style="text-align: center">
-          Now that your app is ready, see the <span>Read Me</span> or refer to the official
-          <span>Shopify Documentation</span> to start building
-        </p>
-      </div>
     </div>
   </section>
 </template>
@@ -129,16 +119,12 @@ section {
 
 h5,
 .description-text {
-  margin-block: 0;
-}
-
-h5,
-.description-text {
   margin-block: 1rem;
 }
 
 .number {
-  line-height: 1.5;
+  display: flex;
+  padding-top: 1.14rem;
 }
 
 .congratulations {
