@@ -49,7 +49,6 @@ const keyWords = ['npm', 'git']
   color: var(--text);
   width: 100%;
   gap: 1rem;
-  overflow: hidden;
 }
 
 .keyword {
