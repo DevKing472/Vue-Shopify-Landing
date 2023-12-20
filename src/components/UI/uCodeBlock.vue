@@ -93,9 +93,12 @@ const keyWords = ['npm', 'git']
     display: flex;
     justify-content: center;
   }
-  .code-space:has(.http) {
-    width: 200px;
+  .code-space {
     text-wrap: nowrap;
+  }
+  .http {
+    display: flex;
+    width: 200px;
     overflow-x: scroll;
   }
 
@@ -109,8 +112,13 @@ const keyWords = ['npm', 'git']
 }
 
 @media screen and (max-width: 321px) {
-  .code-space:has(.http) {
+  .code-space {
+    text-wrap: nowrap;
+  }
+  .http {
+    display: flex;
     width: 120px;
+    overflow-x: scroll;
   }
 }
 </style>
