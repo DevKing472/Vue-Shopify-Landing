@@ -87,7 +87,7 @@ const keyWords = ['npm', 'git']
   border-radius: 0.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .code-parent {
     width: min(95%, 1600px);
     display: flex;

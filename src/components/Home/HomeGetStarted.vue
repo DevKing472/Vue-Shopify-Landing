@@ -65,8 +65,8 @@ import {
 } from '@phosphor-icons/vue'
 import { useDark } from '@vueuse/core'
 import { computed } from 'vue'
-import congratulationDark from '../../assets/images/congratulations_dark.png'
-import congratulationLight from '../../assets/images/congratulations_light.png'
+import congratulationDark from '../../assets/images/congratulations_dark.webp'
+import congratulationLight from '../../assets/images/congratulations_light.webp'
 
 const isDark = useDark()
 
@@ -160,7 +160,7 @@ h5,
 
 @media (prefers-color-scheme: light) {
   .congratulations {
-    background-image: url('../../assets/images/congratulations_light.png');
+    background-image: url('../../assets/images/congratulations_light.webp');
   }
 }
 

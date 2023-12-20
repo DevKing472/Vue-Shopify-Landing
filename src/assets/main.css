@@ -12,7 +12,7 @@
     --clr-1: #052b2f;
     --clr-2: #073438;
     --clr-3: #0e4b50;
-    --clr-4: #2d8f85;
+    --clr-4: hsl(174, 52%, 27%);
     --clr-5: #00000081;
     --bleed-in: #f4f4f6;
     --card-icon-bg: #cfcfcf;
@@ -47,9 +47,9 @@
   --accent-3: hsl(98, 100%, 24%);
   --clr-1: #052b2f;
   --clr-2: #073438;
-  --clr-3: #0e4b50;
-  --clr-4: #2d8f85;
-  --clr-5: #00000081;
+  --clr-3: #2de2f3;
+  --clr-4: hsl(174, 52%, 27%);
+  --clr-5: #ffffffbc;
   --bleed-in: #f4f4f6;
   --card-icon-bg: #cfcfcf;
   --card-icon-fill: #3a3a3a;

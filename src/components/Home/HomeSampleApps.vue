@@ -21,7 +21,7 @@
             <h4>mNotify BMS SMS Notification</h4>
           </template>
           <template #default>
-            <img :src="image" class="preview-app" v-motion v-motion-fade-visible />
+            <img :src="image" class="preview-app" v-motion v-motion-fade-visible loading="lazy" width="100"/>
             <p style="text-align: center">
               mNotify BMS SMS Notification is an approved shopify app which passed all checks
             </p>
@@ -38,8 +38,8 @@ import { PhSquaresFour, PhChatCenteredDots } from '@phosphor-icons/vue'
 import BlobGradient from '@/components/Home/BG/BlobGradient.vue'
 import { useDark } from '@vueuse/core'
 import { computed } from 'vue'
-import SampleDark from '@/assets/images/sample_dark.jpg?url'
-import SampleLight from '@/assets/images/sample_light.jpg?url'
+import SampleDark from '@/assets/images/sample_dark.webp?url'
+import SampleLight from '@/assets/images/sample_light.webp?url'
 
 const isDark = useDark()
 const image = computed(() => {
