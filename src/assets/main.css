@@ -15,7 +15,7 @@
     --clr-4: #216961;
     --clr-5: #ffffffbc;
     --bleed-in: #ffffff;
-    --card-icon-bg: #e8e8e8;
+    --card-icon-bg: hsl(0, 0%, 91%);
     --card-icon-fill: #3a3a3a;
     --footer-fill: #d9f6ef;
   }
@@ -53,7 +53,7 @@
   --clr-4: #216961;
   --clr-5: #ffffffbc;
   --bleed-in: #ffffff;
-  --card-icon-bg: #e2e2e2;
+  --card-icon-bg: hsl(0, 0%, 92%);
   --card-icon-fill: #3a3a3a;
   --footer-fill: #d9f6ef;
 }
